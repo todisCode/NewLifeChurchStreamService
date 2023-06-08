@@ -10,6 +10,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/slick/slick.css">
+	    <link rel="stylesheet" href="css/slick/slick-theme.css">
         
         <script src="https://kit.fontawesome.com/cee5a4d873.js" crossorigin="anonymous"></script>
 
@@ -20,24 +22,75 @@
             <div class="center">
                 <div class="w33">
                     <nav class="menu">
-
+                        <i class="fa fa-angle-down" aria-hidden="true"></i><!--Arrow Down Icon-->
+                        <ul class="hidden">
+                            <a href="#"><li>Profile</li></a>
+                            <a href="#"><li>Log Out</li></a>
+                        </ul>
                     </nav><!--menu-->
                 </div><!--w33---->
                 
                 <div class="w33">
-                    <div class="logo"></div><!--logo-->
+                    <a href="#"><div class="logo"></div></a><!--logo-->
                 </div><!--w33-->
                 
                 <div class="w33">
                     <nav class="menu">
-                        
+                        <ul class="visibleMenu right">
+                            <li><a href="#">Sunday Services</a></li>
+                            <li><a href="#">Series</a></li>
+                            <li><a href="#">PodCasts</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
                     </nav><!--menu-->
                 </div><!--w33-->
 
                 <div class="clear"></div><!--clear-->
             </div><!--center-->
         </header>
-        
+
+        <section class="mainSection">
+            <div class="center">
+                <div class="w50">
+                    <div class="tituloDestaque">
+                        <h1>Titulo do video em Destaque</h1>
+                        <h2>Subtitulo do video em destaque</h2>
+
+                        <a href="#">
+                            <div class="botaoDestaque left">
+                                <h3><i class="fa fa-play" aria-hidden="true"></i> Play</h3>
+                            </div><!--botaoDestaque PLAY-->
+                        </a>
+
+                        <a href="#">
+                            <div class="botaoDestaque left">
+                                <h3>
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle-o fa-stack-2x"></i>
+                                        <i class="fa fa-info fa-stack-1x"></i>
+                                    </span>
+                                    More Info
+                                </h3>
+                            </div><!--botaoDestaque MORE INFO-->
+                        </a>
+                    </div><!--tituloDestaque-->
+                </div><!--w50-->
+                <div class="w50"></div><!--w50 Place Holder-->
+            </div><!--center-->
+        </section><!--mainSection-->
+
+        <section class="sundayServices">
+            <div class="center">
+                <h1>Sunday Services</h1>
+
+                <div class="slider demo">
+                    <div> Slide  1 </div>
+                    <div> Slide  2 </div>
+                    <div> Slide  3 </div>
+                </div>
+            </div><!--center-->
+        </section><!--Sunday Services Section-->
+            
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script>
             $(function () {
@@ -53,7 +106,8 @@
                     }
                 })
             })
-        </script>
+        </script><!--Drop Down Menu Script-->
+
     </body>
     <footer>
 

@@ -14,7 +14,6 @@ html, body{
 
 .center{
     padding: 0 2%;
-    margin: 0 auto;
 }
 
 .right{
@@ -31,57 +30,48 @@ html, body{
 
 .w33{
     width: 33.3%;
-    min-height: 100px;
-    padding: 1%;
+    min-height: 75px;
     float: left;
-    background-color: yellow;
-    border: 1px solid aqua;
+}
 
+.w50{
+    width: 50%;
+    float: left;
 }
 
 /* Estilizacao */
-
 header{
-    padding: 1% 0;
+    z-index: 999;
     position: relative;
 }
 
-.logo{
-    width: 100px;
-    height: 50px;
-    background-color: black;
-    margin: 0 auto;
-   
-}
-
-.logo img{
-    width: 100%;
-    height: 100%;
-}
-
 nav.menu i:hover, nav.menu i:focus{
-    color: #333;
+    color: #555555;
 }
 
 nav.menu{
     width: 100%;
-    height: 50px;
-    color: white;
-    cursor: pointer;
-    font-size: 23px;
+    margin-top: 10px;
     text-decoration: none;
-    background-color: aqua;
+}
+
+nav.menu i{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+nav.menu ul{
+    list-style-type: none;
 }
 
 nav.menu .hidden{
     display: none;
-    margin-top: 20px;
     width: 200px;
     z-index: 999;
     position: absolute;
     text-align: center;
     background-color: rgba(0,0,0,0.2);
-    list-style-type: none;
 }
 
 nav.menu .hidden li{
@@ -91,37 +81,100 @@ nav.menu .hidden li{
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-nav.menu li a{
+nav.menu .hidden li:hover, nav.menu .hidden li:focus{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav.menu a{
     text-decoration: none;
     color: whitesmoke;
 }
 
-nav.menu li a:hover, nav.menu li a:focus{
+nav.menu .hidden a:hover, nav.menu .hidden a:focus{
     color: #777;
 }
 
-nav.navigation{
-    width: 600px;
-    cursor: pointer;
-    text-decoration: none;
-    background-color: aqua;
+.logo{
+    height: 75px;
+    background-image: url("../assets/nl-logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
 }
 
-nav.navigation ul{
-    list-style-type: none;
-}
-
-nav.navigation li{
-    float: left;
+nav.menu .visibleMenu{
     font-size: 14px;
-    padding: 0 30px;
     font-weight: 100;
 }
 
-nav.navigation li a{
-    color: white;
-    text-decoration: none;
+nav.menu .visibleMenu li{
+    float: left;
+    margin: 0 20px;
 }
 
+.visibleMenu a:hover{
+    color: #555555;
+}
 
+.mainSection{
+    width: 100%;
+    height: 700px;
+    background-color: #777;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
+.tituloDestaque{
+    width: 450px;
+    height: 200px;
+    margin-top: 300px;
+}
+
+.tituloDestaque h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.tituloDestaque h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.tituloDestaque .botaoDestaque{
+    min-width: 110px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    vertical-align: middle;
+}
+
+.tituloDestaque .botaoDestaque:hover{
+    background-color: rgba(58, 58, 58, 0.2);
+}
+
+.botaoDestaque span{
+    font-size: 8px;
+}
+
+.botaoDestaque h3{
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.sundayServices{
+    margin-top: 625px;
+    position: relative;
+}
+
+.sundayServices h1{
+    color: white;
+    padding: 20px 0;
+    font-size: 30px;
+}
