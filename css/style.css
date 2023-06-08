@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+html, body{
+    height: 100%;
+    background-color: black;
+}
+
+/* Classes Auxiliares */
+
+.center{
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+.w33{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+
+}
+
+/* Estilizacao */
+
+header{
+    padding: 1% 0;
+    position: relative;
+}
+
+.logo{
+    width: 5%;
+   
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+nav.menu i:hover, nav.menu i:focus{
+    color: #333;
+}
+
+nav.menu{
+    color: white;
+    cursor: pointer;
+    font-size: 23px;
+    text-decoration: none;
+    background-color: aqua;
+}
+
+nav.menu .hidden{
+    display: none;
+    margin-top: 20px;
+    width: 200px;
+    z-index: 999;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    list-style-type: none;
+}
+
+nav.menu .hidden li{
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+nav.menu li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav.menu li a:hover, nav.menu li a:focus{
+    color: #777;
+}
+
+nav.navigation{
+    width: 600px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: aqua;
+}
+
+nav.navigation ul{
+    list-style-type: none;
+}
+
+nav.navigation li{
+    float: left;
+    font-size: 14px;
+    padding: 0 30px;
+    font-weight: 100;
+}
+
+nav.navigation li a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
