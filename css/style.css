@@ -7,7 +7,7 @@
 
 html, body{
     height: 100%;
-    background-color: black;
+    background-color: rgb(31, 31, 31);
 }
 
 /* Classes Auxiliares */
@@ -168,13 +168,45 @@ nav.menu .visibleMenu li{
     font-size: 14px;
 }
 
-.sundayServices{
+.space{
     margin-top: 625px;
     position: relative;
 }
 
-.sundayServices h1{
+.categoria h1{
     color: white;
-    padding: 20px 0;
-    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.slider{
+    width: 100%;
+    position: relative;
+}
+
+.midia{
+    width: 200px;
+    height: 250px;
+    margin: 0 5px;
+    background-color: rgb(170, 170, 170);
+    display: inline-block;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+}
+
+.arrowNav{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrowNav i{
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    font-weight: 700;
 }

@@ -10,8 +10,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="css/slick/slick.css">
-	    <link rel="stylesheet" href="css/slick/slick-theme.css">
         
         <script src="https://kit.fontawesome.com/cee5a4d873.js" crossorigin="anonymous"></script>
 
@@ -79,19 +77,99 @@
             </div><!--center-->
         </section><!--mainSection-->
 
-        <section class="sundayServices">
+        <div class="space"></div><!--space-->
+
+        <section class="categoria">
+            <div class="center">
+                <h1>New Releases</h1>
+            </div><!--center-->
+                
+            <div id="slider" class="slider">
+                <div class="midia"> Slide  1 </div>
+                <div class="midia"> Slide  2 </div>
+                <div class="midia"> Slide  3 </div>
+                <div class="midia"> Slide  4 </div>
+                <div class="midia"> Slide  5 </div>
+                <div class="midia"> Slide  6 </div>
+
+                <div class="arrowNav">
+                    <i class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                    <i class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+                </div><!--arrowNav-->
+            </div><!--slider-->             
+        </section><!--categoria-->
+
+        <section class="categoria">
             <div class="center">
                 <h1>Sunday Services</h1>
-
-                <div class="slider demo">
-                    <div> Slide  1 </div>
-                    <div> Slide  2 </div>
-                    <div> Slide  3 </div>
-                </div>
             </div><!--center-->
-        </section><!--Sunday Services Section-->
+                
+            <div class="slider">
+                <div class="midia"> Slide  1 </div>
+                <div class="midia"> Slide  2 </div>
+                <div class="midia"> Slide  3 </div>
+
+                <div class="arrowNav">
+                    <i id="arrL" class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                    <i id="arrR" class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+                </div><!--arrowNav-->
+            </div><!--slider--> 
+        </section><!--categoria-->
+
+        <section class="categoria">
+            <div class="center">
+                <h1>Series</h1>
+            </div><!--center-->
+                
+            <div class="slider">
+                <div class="midia"> Slide  1 </div>
+                <div class="midia"> Slide  2 </div>
+                <div class="midia"> Slide  3 </div>
+
+                <div class="arrowNav">
+                    <i class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                    <i class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+                </div><!--arrowNav-->
+            </div><!--slider--> 
+        </section><!--categoria-->
+
+        <section class="categoria">
+            <div class="center">
+                <h1>PodCasts</h1>
+            </div><!--center-->
+                
+            <div class="slider">
+                <div class="midia"> Slide  1 </div>
+                <div class="midia"> Slide  2 </div>
+                <div class="midia"> Slide  3 </div>
+
+                <div class="arrowNav">
+                    <i class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                    <i class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+                </div><!--arrowNav-->
+            </div><!--slider--> 
+        </section><!--categoria-->
+
+        <section class="categoria">
+            <div class="center">
+                <h1>Events</h1>
+            </div><!--center-->
+                
+            <div class="slider">
+                <div class="midia"> Slide  1 </div>
+                <div class="midia"> Slide  2 </div>
+                <div class="midia"> Slide  3 </div>
+
+                <div class="arrowNav">
+                    <i class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                    <i class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+                </div><!--arrowNav-->
+            </div><!--slider--> 
+        </section><!--categoria-->
             
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
         <script>
             $(function () {
                 $('nav.menu i').click(function () {
@@ -107,6 +185,18 @@
                 })
             })
         </script><!--Drop Down Menu Script-->
+
+        <script>
+            $(function() {
+                $(".midia").slick({
+                    autoplay: true, // Ativa o modo de reprodução automática
+                    arrows: true, // Exibe as setas de navegação
+                    prevArrow: $("#arrL"), // Elemento HTML para o botão de navegação para a esquerda
+                    nextArrow: $("#arrR"), // Elemento HTML para o botão de navegação para a direita
+                    dots: false // Remove os pontos de navegação
+                });
+            });
+        </script>
 
     </body>
     <footer>
