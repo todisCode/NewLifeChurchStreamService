@@ -167,36 +167,10 @@
             </div><!--slider--> 
         </section><!--categoria-->
             
+        <script src="/js/scripts.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
-        <script>
-            $(function () {
-                $('nav.menu i').click(function () {
-                    var el = $(this).parent().find('ul');
-                    var icone = $(this).parent().find('i');
-                    if (el.is(':visible') == false) {
-                        el.slideToggle();
-                        icone.removeClass("fa fa-angle-down").addClass("fa fa-angle-up");
-                    } else {
-                        el.slideUp();
-                        icone.removeClass("fa fa-angle-up").addClass("fa fa-angle-down");
-                    }
-                })
-            })
-        </script><!--Drop Down Menu Script-->
-
-        <script>
-            $(function() {
-                $(".midia").slick({
-                    autoplay: true, // Ativa o modo de reprodução automática
-                    arrows: true, // Exibe as setas de navegação
-                    prevArrow: $("#arrL"), // Elemento HTML para o botão de navegação para a esquerda
-                    nextArrow: $("#arrR"), // Elemento HTML para o botão de navegação para a direita
-                    dots: false // Remove os pontos de navegação
-                });
-            });
-        </script>
+        
 
     </body>
     <footer>
