@@ -175,7 +175,7 @@ nav.menu .visibleMenu li{
 
 .categoria{
     width: 100%;
-    overflow: hidden;
+    position: relative;
 }
 
 .categoria h1{
@@ -185,29 +185,45 @@ nav.menu .visibleMenu li{
     font-size: 18px;
 }
 
-.slider{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
+.navGallery{
+    overflow: hidden;
+    width: 100%;
+}
+
+.nav-galeria-wraper{
+    /*
+        via js=>width
+    */
+}
+
+.mini-img-wraper{
+    float: left;
+    padding: 9px;
+    vertical-align: middle;
+    /*
+        via js=>width
+    */
 }
 
 .midia{
-    width: 200px;
+    width: 100%;
     height: 250px;
-    margin: 0 5px;
+    cursor: pointer;
     background-color: rgb(170, 170, 170);
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
     box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
 }
 
 .arrowNav{
-    /*width: 100%;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);*/
+    transform: translate(-50%, -50%);
+    z-index: 9;
 }
 
 .arrowNav i{
@@ -215,4 +231,45 @@ nav.menu .visibleMenu li{
     margin: 0 10px;
     font-size: 24px;
     font-weight: 700;
+}
+
+
+
+.nav-galeria-parent{
+    width: 100%;
+    padding:36px;
+    position: relative;
+}
+
+.arrow-left-nav{
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    cursor: pointer;
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    background-image:url('../imagens/arrow-left.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+}
+
+
+
+.arrow-right-nav{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    cursor: pointer;
+    transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    background-image:url('../imagens/arrow-right.png');
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+}
+
+.nav-galeria{
+    overflow: hidden;
+    width: 100%;
 }

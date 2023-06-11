@@ -12,6 +12,8 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
         <script src="https://kit.fontawesome.com/cee5a4d873.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+        <script src="js/scripts.js" defer></script>
 
         <title>New Life Church - Stream</title>
     </head>
@@ -79,24 +81,33 @@
 
         <div class="space"></div><!--space-->
 
-        <section class="categoria">
+        <section id="#" class="categoria">
             <div class="center">
                 <h1>New Releases</h1>
             </div><!--center-->
-                
-            <div id="slider" class="slider">
-                <div class="midia"> Slide  1 </div>
-                <div class="midia"> Slide  2 </div>
-                <div class="midia"> Slide  3 </div>
-                <div class="midia"> Slide  4 </div>
-                <div class="midia"> Slide  5 </div>
-                <div class="midia"> Slide  6 </div>
 
-                <div class="arrowNav">
-                    <i class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
-                    <i class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
-                </div><!--arrowNav-->
-            </div><!--slider-->             
+            <div class="arrowNav">
+                <i id="botaoEsqueda1" prev class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                <i id="botaoDireita1" next class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+            </div><!--arrowNav-->
+                
+            <div class="nav-galeria">
+                <div class="nav-galeria-wraper">
+                    <div class="mini-img-wraper"><div class="midia"> Slide  1 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  2 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  3 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  4 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  5 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  6 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  7 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  8 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  9 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  10 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  11 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  12 </div></div>
+                </div><!--nav-galeria-wraper-->  
+            </div><!--nav-galeria-->
+       
         </section><!--categoria-->
 
         <section class="categoria">
@@ -104,16 +115,27 @@
                 <h1>Sunday Services</h1>
             </div><!--center-->
                 
-            <div class="slider">
-                <div class="midia"> Slide  1 </div>
-                <div class="midia"> Slide  2 </div>
-                <div class="midia"> Slide  3 </div>
-
-                <div class="arrowNav">
-                    <i id="arrL" class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
-                    <i id="arrR" class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
-                </div><!--arrowNav-->
-            </div><!--slider--> 
+            <div class="arrowNav">
+                <i id='botaoEsquerda2' prev class="botaoDireita left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                <i id='botaoDireita2' next class="botaoEsquerda right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+            </div><!--arrowNav-->
+                
+            <div class="nav-galeria">
+                <div class="nav-galeria-wraper">
+                    <div class="mini-img-wraper"><div class="midia"> Slide  1 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  2 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  3 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  4 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  5 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  6 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  7 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  8 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  9 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  10 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  11 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  12 </div></div>
+                </div><!--nav-galeria-wraper-->  
+            </div><!--nav-galeria-->
         </section><!--categoria-->
 
         <section class="categoria">
@@ -121,16 +143,27 @@
                 <h1>Series</h1>
             </div><!--center-->
                 
-            <div class="slider">
-                <div class="midia"> Slide  1 </div>
-                <div class="midia"> Slide  2 </div>
-                <div class="midia"> Slide  3 </div>
-
-                <div class="arrowNav">
-                    <i class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
-                    <i class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
-                </div><!--arrowNav-->
-            </div><!--slider--> 
+            <div class="arrowNav">
+                <i id='botaoEsquerda3' prev class="botaoDireita left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                <i id='botaoDireita3' next class="botaoEsquerda right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+            </div><!--arrowNav-->
+                
+            <div class="nav-galeria">
+                <div class="nav-galeria-wraper">
+                    <div class="mini-img-wraper"><div class="midia"> Slide  1 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  2 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  3 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  4 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  5 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  6 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  7 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  8 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  9 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  10 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  11 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  12 </div></div>
+                </div><!--nav-galeria-wraper-->  
+            </div><!--nav-galeria-->
         </section><!--categoria-->
 
         <section class="categoria">
@@ -138,16 +171,27 @@
                 <h1>PodCasts</h1>
             </div><!--center-->
                 
-            <div class="slider">
-                <div class="midia"> Slide  1 </div>
-                <div class="midia"> Slide  2 </div>
-                <div class="midia"> Slide  3 </div>
-
-                <div class="arrowNav">
-                    <i class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
-                    <i class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
-                </div><!--arrowNav-->
-            </div><!--slider--> 
+            <div class="arrowNav">
+                <i prev class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                <i next class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+            </div><!--arrowNav-->
+                
+            <div class="nav-galeria">
+                <div class="nav-galeria-wraper">
+                    <div class="mini-img-wraper"><div class="midia"> Slide  1 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  2 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  3 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  4 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  5 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  6 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  7 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  8 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  9 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  10 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  11 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  12 </div></div>
+                </div><!--nav-galeria-wraper-->  
+            </div><!--nav-galeria-->
         </section><!--categoria-->
 
         <section class="categoria">
@@ -155,20 +199,31 @@
                 <h1>Events</h1>
             </div><!--center-->
                 
-            <div class="slider">
-                <div class="midia"> Slide  1 </div>
-                <div class="midia"> Slide  2 </div>
-                <div class="midia"> Slide  3 </div>
-
-                <div class="arrowNav">
-                    <i class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
-                    <i class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
-                </div><!--arrowNav-->
-            </div><!--slider--> 
+            <div class="arrowNav">
+                <i prev class="left fa fa-arrow-circle-o-left" aria-hidden="true"></i><!--arrowLeft-->
+                <i next class="right fa fa-arrow-circle-o-right" aria-hidden="true"></i><!--arrowRight-->
+            </div><!--arrowNav-->
+                
+            <div class="nav-galeria">
+                <div class="nav-galeria-wraper">
+                    <div class="mini-img-wraper"><div class="midia"> Slide  1 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  2 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  3 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  4 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  5 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  6 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  7 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  8 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  9 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  10 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  11 </div></div>
+                    <div class="mini-img-wraper"><div class="midia"> Slide  12 </div></div>
+                </div><!--nav-galeria-wraper-->  
+            </div><!--nav-galeria-->
         </section><!--categoria-->
             
-        <script src="/js/scripts.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        
 
         
 
