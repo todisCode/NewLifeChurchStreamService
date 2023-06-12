@@ -38,24 +38,24 @@ $(function () {
 
     function navigateSlider(){
             $('[next]').click(function(event){
-                var currButtom = event.target.id;
+                var currButtom = '#' + event.target.id;
                 var currSection = $(this).parent().parent().attr('id', currButtom);
-                alert(currSection);
                 if(curIndex < maxIndex){
                     curIndex++;
-                    var elOff = $('.mini-img-wraper').eq(curIndex*8).offset().left - $('.nav-galeria-wraper').offset().left;
-                    $('.nav-galeria').animate({'scrollLeft':elOff+'px'});
+                    var elOff = $('.mini-img-wraper').eq(curIndex*1).offset().left - $('.nav-galeria-wraper').offset().left;
+                    $(currSection).animate({'scrollLeft':elOff+'px'});
                 }else{
                     //console.log("Chegamos até o final!");
                 }
             });
 
             $('[prev]').click(function(event){
-                alert(event.target.id);
+                var currButtom = '#' + event.target.id;
+                var currSection = $(this).parent().parent().attr('id', currButtom);
                 if(curIndex > 0){
                     curIndex--;
                     var elOff = $('.mini-img-wraper').eq(curIndex*3).offset().left - $('.nav-galeria-wraper').offset().left;
-                    $('.nav-galeria').animate({'scrollLeft':elOff+'px'});
+                    $(currSection).animate({'scrollLeft':elOff+'px'});
                 }else{
                     //console.log("Chegamos até o final!");
                 }
